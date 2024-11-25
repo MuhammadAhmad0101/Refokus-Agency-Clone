@@ -39,7 +39,7 @@ function Work() {
       ];
       return (
             <div className="max-w-screen-lg mx-auto select-none relative text-white">
-                  <h1 className="text-[34vw] leading-none text-center font-medium">work</h1>
+                  <h1 className="text-[35vw] leading-none text-center font-medium">work</h1>
                   <div className="absolute top-0 w-full h-full">{images.map((item, index) => item.isActive && <img className="rounded-md w-56 absolute -translate-x-1/2 -translate-y-1/2" style={{ left: item.left, top: item.top }} key={index} src={item.url} alt="" />)}</div>
             </div>
       );
