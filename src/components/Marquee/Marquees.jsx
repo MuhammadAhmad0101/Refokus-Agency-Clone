@@ -17,9 +17,9 @@ function Marquees() {
             ],
       ];
       return (
-            <div className="w-full text-white overflow-x-hidden mt-20">
+            <div className="w-full text-white mt-20 overflow-x-hidden relative">
                   {marqueeImages.map((marqCollection, index) => (
-                        <Marquee key={index} marqCollection={marqCollection} />
+                        <Marquee key={index} direction={index === 0 ? "left" : "right"} marqCollection={marqCollection} />
                   ))}
             </div>
       );
